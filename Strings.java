@@ -26,8 +26,8 @@ public class Strings {
         System.out.println("Equals(case-sensitive): " + w5.equals(w6));
         System.out.println("Equal(case insensitive): " + w3.equalsIgnoreCase(w4));
         System.out.println("Length: "+ w5.length());
-        System.out.println("Replace:" + w5.replace(w5, w6));
-        System.out.println("Trimming: " + w6.trim());
+        System.out.println("Replace: " + w5.replace(w5, w6));
+        System.out.println("Trimming: " + w6.trim());   //removes extra space
         System.out.println("Character index: " + w6.indexOf(str4));
 
     }
