@@ -17,7 +17,7 @@ public class Strings {
 
         //------common string methods -----------
         String w5 = "This is for example";
-        String w6 = "Hello Appu, How are you?";
+        String w6 = " Hello Appu, How are you? ";
 
         System.err.println("Uppercase:" + w5.toUpperCase());
         System.out.println("Lowercase: " + w6.toLowerCase());
