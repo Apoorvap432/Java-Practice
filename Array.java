@@ -4,17 +4,28 @@ public class Array {
         String langs[] = { "Appu", "Pappu", "Chappu", "khappu", "Lappu" };
         System.err.println(nums[0]);
 
+
+
         // --------array iteration using for loop---------
+
         for (int i = 0; i < nums.length; i++) {
             System.out.println(nums[i]);
         }
 
+
+
+
         // ---------array iteration using for-each loop-------------------
+
         for (String lang : langs) {
             System.out.println(lang);
         }
 
+
+
+        
         //-------------multidimensional array -----------------------------
+
         int [][] matrix = {
             {1, 2, 3}, 
             {4, 5, 6}
