@@ -32,9 +32,15 @@ public class Casting {
         System.out.println(e+f);    //this will print 18.5
 
         //-----------string to int -----------------
-        String s = "123";
-        int num = Integer.parseInt(s);
+        String g = "123";
+        int num = Integer.parseInt(g);
         System.out.println(num + 10); // 133
+
+        //-------------int to string--------------
+        int h = 55;
+        String i = String.valueOf(h);
+        System.out.println(i + 10); // "5510"
+
 
     }
 }
