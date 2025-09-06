@@ -13,7 +13,7 @@
 // }
 
 
-//instance / non-static variable
+//-------------------instance / non-static variable----------------
 
 class VariableScope{
     int rollNo;
@@ -38,3 +38,13 @@ class VariableScope{
         obj2.Show();
     }
 }
+
+
+
+//--------------------- Static varible ---------------------
+// code is same as in Static.java 
+
+
+
+//--------------------Block Variable------------------------
+//{ } block ke andar banaye gaye variables sirf usi block ke andar accessible hote hain.
