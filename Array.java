@@ -22,4 +22,4 @@ public class Array {
         System.out.println(matrix[1][2]);
     }
 
-}
+} 
