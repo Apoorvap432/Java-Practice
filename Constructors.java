@@ -20,9 +20,31 @@ public class Constructors {
 // }
 
 
- Constructors() {
-    System.out.println("No args constructor");
+//-------------------------no-args constructor-----------------------
+
+class A {
+    A() {
+        System.out.println("No-arg constructor");
+    }
 }
 
+
+
+//--------------------parameterized constructor------------------------
+
+// class A {
+//     int x;
+//     A(int num) {
+//         x = num;
+//     }
+// }
+
+
+
+//-----------------------------constructor overloading----------------------------
+// class A {
+//     A() { System.out.println("No-arg"); }
+//     A(int x) { System.out.println("Value: " + x); }
+// }
 
 }
