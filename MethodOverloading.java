@@ -14,14 +14,16 @@ class DisplayOverloading{
         System.out.println(t + " " + y + " " + a);
     }
 }
-public class Polymorphism {
+public class MethodOverloading {
     public static void main(String[] args) {
         DisplayOverloading obj = new DisplayOverloading();
         obj.disp('a');
         obj.disp(7, 'g');
         obj.disp(4, 'z', 0);
-
-
     }
     
 }
+
+
+
+
