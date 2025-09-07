@@ -40,7 +40,7 @@
 
 
 // public class Static {
-//     
+    
 //     int rollNo;
 //     String name;
 //     static String College = "Hmara college";
