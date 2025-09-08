@@ -1,27 +1,38 @@
-class Animals {
-    void sound() {
-        System.out.println("Some sound");
+// CastingObjectsExample.java
+
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle is starting...");
     }
 }
 
-class Dog extends Animals {
-    void sound() {
-        System.out.println("Bark");
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car is starting with a key...");
     }
 
-    void fetch() {
-        System.out.println("Fetching stick...");
+    void playMusic() {
+        System.out.println("Car is playing music 🎵");
     }
 }
 
 public class CastingObjects {
     public static void main(String[] args) {
-        Dog d = new Dog();
 
-        // Upcasting (Dog → Animal)
-        Animals a = d;  // ✅ safe
+        // ----- Upcasting -----
+        Vehicle v = new Car(); // Car object is referenced by Vehicle type
+        v.start();             // ✅ Calls Car's start() (runtime polymorphism)
 
-        a.sound();     // Output: Bark (runtime polymorphism)
-        // a.fetch();  // ❌ Error: Animal class me fetch() nahi hai
+        // v.playMusic();  // ❌ Error: Vehicle type doesn't have playMusic()
+
+        // ----- Downcasting -----
+        Car c = (Car) v;       // Safe: v actually refers to a Car object
+        c.start();             // ✅ Car's start()
+        c.playMusic();         // ✅ Car specific method
+
+        // ----- Unsafe Downcasting Example -----
+        Vehicle v2 = new Vehicle(); 
+        // Car c2 = (Car) v2;   // ❌ Runtime error: ClassCastException
+        // c2.playMusic();
     }
 }
