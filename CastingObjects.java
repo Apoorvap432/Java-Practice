@@ -12,7 +12,7 @@ class Car extends Vehicle {
     }
 
     void playMusic() {
-        System.out.println("Car is playing music 🎵");
+        System.out.println("Car is playing music");
     }
 }
 
@@ -20,10 +20,10 @@ public class CastingObjects {
     public static void main(String[] args) {
 
         // ----- Upcasting -----
+        // sub class to super class
         Vehicle v = new Car(); // Car object is referenced by Vehicle type
         v.start();             // ✅ Calls Car's start() (runtime polymorphism)
 
-        // v.playMusic();  // ❌ Error: Vehicle type doesn't have playMusic()
 
         // ----- Downcasting -----
         Car c = (Car) v;       // Safe: v actually refers to a Car object
@@ -31,7 +31,7 @@ public class CastingObjects {
         c.playMusic();         // ✅ Car specific method
 
         // ----- Unsafe Downcasting Example -----
-        Vehicle v2 = new Vehicle(); 
+        // Vehicle v2 = new Vehicle(); 
         // Car c2 = (Car) v2;   // ❌ Runtime error: ClassCastException
         // c2.playMusic();
     }
