@@ -1,3 +1,15 @@
+//main example of dependency injection in java 
+public class DependencyInjection{
+    public static void main(String[] args) {
+        BookService bookService = new BookService();
+        BookStore bookStore = new BookStore(bookService);
+
+        System.out.println(bookStore.getBooks());
+    }
+}
+
+
+
 //without dependency injection
 
 // public class DependencyInjection {
@@ -24,3 +36,5 @@
 //         this.bookService = bookService;
 //     }
 // }
+
+
