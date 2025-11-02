@@ -16,7 +16,7 @@ public class Bike implements Ioc{
     }
 }
 
-<bean id="vehicle" class="Revature.Bike"></bean>
+<bean id="vehicle" class="Revature.Car"></bean>
 
 ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
 Ioc v = (Ioc) context.getBean("Ioc");
